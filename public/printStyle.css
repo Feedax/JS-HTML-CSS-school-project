@@ -1,0 +1,51 @@
+@media print{
+
+    *{
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    nav,
+    .banner,
+    .banner2,
+    .banner3,
+    .banner4,
+    img,
+    .formular,
+    footer{
+        display: none !important;
+    }
+
+    .page{
+        width: 100%;
+    }
+
+    a[href^="https:"]::after{
+        content:"["attr(href)"]";
+        color: blue;
+    }
+
+    h2,
+    ul,
+    ol{
+        page-break-after: avoid;
+    }
+
+    p,
+    ul,
+    ol{
+        orphans: 3;
+        widows: 3;
+        font-size: 11pt;
+    }
+
+    h2{
+        font-size: 15pt;
+    }
+
+    .page :first{
+        margin-top: 5cm;
+    }
+}

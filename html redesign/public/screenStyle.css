@@ -1,0 +1,484 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.banner{
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../fig/bcg1.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo{
+  width: 30%;
+  transition: 0.5s;
+}
+.logo:hover{
+  transform: scale(1.2);
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #EACEB4;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.text-box{
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 62px;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+.button{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 1s;
+}
+.button:hover{
+  border: 1px solid #EACEB4;
+  background: #EACEB4;
+}
+nav .fa{
+  display: none;
+}
+.blog{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+h2{
+  font-weight: 600;
+  padding: 10px;
+}
+p{
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+ol, ul, li{
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 5px;
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-col{
+  flex-basis: 31%;
+  background: #EACEB4;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.checkbox{
+  margin: auto;
+}
+.blogpic{
+  width: 80%;
+  margin-top: 10px;
+}
+.cd{
+  text-decoration: none !important;
+  color: black;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.blog-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+footer{
+  text-align: center;
+  background-color: #EACEB4;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+.ikony .fa{
+  color: black;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  transition: 0.5s;
+}
+.fa-heart-o{
+  color: black;
+}
+.ikony .fa:hover{
+  transform: scale(1.4);
+}
+.banner2{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../fig/bcg2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  position: relative;
+}
+.banner2 h1{
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+.article1{
+  width: 80%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.article-1-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.article-1-col img{
+  display: block;
+  width: 100%;
+  height: 58%;
+}
+.article-1-col h1{
+  padding-top: 0;
+}
+.article-1-col a{
+  padding: 15px 0 25px;
+}
+.formular{
+  border: 0px solid #EACEB4;
+  margin: 50px auto;
+  padding: 10px 20px;
+  width: 30%;
+  color: white;
+}
+
+.bcg{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../fig/bcg6.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+}
+.formular h3{
+  text-align: left;
+}
+.banner3{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../fig/bcg3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  position: relative;
+}
+.banner3 h1{
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+.banner4{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../fig/bcg4.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  position: relative;
+}
+.banner4 h1{
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+@media(max-width: 816px){
+  .text-box h1{
+    font-size: 20px;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: fixed;
+    background: #EACEB4;
+    height: 50vh;
+    width: 150px;
+    top: 0;
+    right: -150px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa{
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul{
+    padding: 30px;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .banner{
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+  .article-1-col h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .article-1-col h2, p{
+    text-align: center;
+  }
+  .banner2 .banner3 .banner4 h1{
+    font-size: 30px;
+  }
+  .banner2{
+    background-position: right;
+    background-size: cover;
+    position: relative;
+  }
+  .article-1-col img{
+    margin-top: -50px;
+  }
+  .article1{
+    margin-top: -50px;
+  }
+  .formular{
+    width: 80%;
+  }
+}
+
+form h3{
+  text-align: left;
+}
+form .input-text, form textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background: #f0f0f0;
+}
+form .checkbox{
+  width: 100%;
+  padding: 10px;
+  margin-top: -30px;
+  align-items: baseline;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checkbox-title{
+  margin-left: 1%;
+}
+
+form .button{
+  margin: 10px auto;
+  color: #EACEB4;
+  border: 1px solid #EACEB4;
+  justify-content: center;
+}
+form .button:hover{
+  color: white;
+  border: 1px solid white;
+}
+
+@media(max-width: 950px){
+  form .checkbox{
+    flex-direction: column;
+  }
+}
+
+.fdb{
+  width: 50%;
+  text-align: left;
+  margin: -90px auto;
+  margin-bottom: 50px;
+}
+.fdb h2{
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 30px;
+  margin: 5%;
+}
+.fdb h3{
+  color: #EACEB4;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.fdb h4{
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.fdb h5{
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+.fdb p{
+  color: #777 !important;
+}
+.opContainer{
+  margin-left: 10px;
+  margin-bottom: 14%;
+}
+.opContainer p{
+  color: black;
+}
+.section{
+  border-bottom: 3px solid #EACEB4;
+}
+input:invalid, textarea:invalid{
+  border-color: red;
+  border-radius: 4px;
+}
+.fdb2{
+  width: 50%;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.fdb2 h3{
+  color: black;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.fdb2 span{
+  display: flex;
+  justify-content: space-evenly;
+}
+.fdb2 p{
+  color: black;
+  text-align: left;
+}
+.pred{
+  text-decoration: none;
+  color: black;
+}
+.strn{
+  text-align: center;
+  display: block;
+}
+.ikony-s i{
+  color: #EACEB4 !important;
+}
+.ikony-s{
+  text-align: center;
+  margin: 10px auto;
+  width: 50%;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.feedbacksec{
+  border-bottom: 3px solid #EACEB4;
+}
+.fdb#artOpinions{
+  margin-top: 50px;
+}
+@media(max-width: 1555px){
+  form .checkbox{
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 1260px){
+  .article-1-col h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .article-1-col h2, p{
+    text-align: center;
+  }
+  .article-1-col img{
+    margin-top: -50px;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .fdb{
+    width: 80%;
+  }
+  .fdb2{
+    width: 80%;
+  }
+}

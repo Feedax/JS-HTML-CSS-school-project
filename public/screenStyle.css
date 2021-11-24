@@ -153,8 +153,8 @@ h3{
 footer{
   text-align: center;
   background-color: #EACEB4;
-  position: absolute;
-  width: 100vw;
+  position: relative;
+  width: 100%;
   height: auto;
   padding-top: 20px;
 }
@@ -208,10 +208,9 @@ footer{
 }
 .formular{
   border: 0px solid #EACEB4;
-  margin: 10px auto;
+  margin: 50px auto;
   padding: 10px 20px;
   width: 30%;
-  margin-bottom: 100px;
   color: white;
 }
 
@@ -257,7 +256,7 @@ html{
   scroll-behavior: smooth;
 }
 
-@media(max-width: 700px){
+@media(max-width: 816px){
   .text-box h1{
     font-size: 20px;
   }
@@ -329,8 +328,6 @@ form .input-text, form textarea{
   padding: 10px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: none;
-  outline: none;
   background: #f0f0f0;
 }
 form .checkbox{
@@ -368,6 +365,7 @@ form .button:hover{
   width: 50%;
   text-align: left;
   margin: -90px auto;
+  margin-bottom: 50px;
 }
 .fdb h2{
   text-align: center;
@@ -391,7 +389,6 @@ form .button:hover{
   font-size: 20px;
 }
 .fdb h5{
-  font-weight: 0;
   font-size: 15px;
   margin-bottom: 3px;
 }
@@ -405,6 +402,83 @@ form .button:hover{
 .opContainer p{
   color: black;
 }
-section{
+.section{
   border-bottom: 3px solid #EACEB4;
+}
+input:invalid, textarea:invalid{
+  border-color: red;
+  border-radius: 4px;
+}
+.fdb2{
+  width: 50%;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.fdb2 h3{
+  color: black;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.fdb2 span{
+  display: flex;
+  justify-content: space-evenly;
+}
+.fdb2 p{
+  color: black;
+  text-align: left;
+}
+.pred{
+  text-decoration: none;
+  color: black;
+}
+.strn{
+  text-align: center;
+  display: block;
+}
+.ikony-s i{
+  color: #EACEB4 !important;
+}
+.ikony-s{
+  text-align: center;
+  margin: 10px auto;
+  width: 50%;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.feedbacksec{
+  border-bottom: 3px solid #EACEB4;
+}
+.fdb#artOpinions{
+  margin-top: 50px;
+}
+@media(max-width: 1555px){
+  form .checkbox{
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 1260px){
+  .article-1-col h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .article-1-col h2, p{
+    text-align: center;
+  }
+  .article-1-col img{
+    margin-top: -50px;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .fdb{
+    width: 80%;
+  }
+  .fdb2{
+    width: 80%;
+  }
 }

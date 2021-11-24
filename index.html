@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
 
 <head>
 	<title>DOGGERLAND</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
 	<link rel="stylesheet" href="public/screenStyle.css">
   <link rel="stylesheet" href="public/printStyle.css">
   <script src="https://kit.fontawesome.com/ebfc59a101.js" crossorigin="anonymous"></script>
@@ -14,14 +15,14 @@
 
   <div class="banner">
     <nav>
-      <a href="index.html"><img src="fig/logo.png" class="logo"></a>
+      <a href="index.html"><img src="fig/logo.png" class="logo" alt="logo"></a>
       <div class="nav-links" id="navLinks">
       <i class="fa fa-times" onclick="zatvorit()"></i>
         <ul>
-          <li><a href="index.html">Domov</a></li>
-          <li><a href="#">O nás</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="#welcome">Domov</a></li>
+          <li><a href="#articles/1/74">Blog</a></li>
+          <li><a href="#opinions">Feedback</a></li>
+          <li><a href="#addOpinion">Napíšte nám</a></li>
         </ul>
       </div>
     <i class="fa fa-bars" onclick="otvorit()"></i>
@@ -33,109 +34,168 @@
     </div>
   </div>
 
-  <main class="blog" id="blog">
-    <h1>Naše blogy</h1>
-    <p>Zoznam všetkých naších blogov na jednom mieste!</p>
 
-    <div class="row">
-      <div class="blog-col">
-        <h3>STRATIL SA MI PES – ČO TERAZ?</h3>
-        <img src="fig/a1.jpg" class="blogpic" alt="article 1">
-        <p>Nech sa akokoľvek snažíme, občas sa niekomu prihodí takáto nepríjemná situácia. Čo teda robiť, 
-          keď sa mi stratí pes? Na to pozrieme v tomto článku. Najskôr si ale povedzme, ako sa preventívne pripraviť na takúto situáciu. 
-          Čo môže pomôcť aby sa k vám psík rýchlo vrátil, ak ho niekto nájde? Čip – v dnešnej dobe je čipovanie povinné, takže by ho mal…</p>
-          <a href="article1.html" class="cd"><h3>Čítať ďalej→</h3></a>
-      </div>
-      <div class="blog-col">
-        <h3>PREČO JE ADOPCIA STARŠIEHO PSÍKA SUPER ?</h3>
-        <img src="fig/a2.jpg" class="blogpic" alt="article 2">
-        <p>Ak nemáte potrebu mať doma čistokrvného psíka a chcete si nejakého zaobstarať, ideálne je pozrieť sa do útulku. Na výber ich budete mať neúrekom. 
-          Od roztomilých šteniatok, ktoré si vás hneď získajú, až po starších psíkov. Dnes sa pozrieme na adopciu staršieho psíka. Keď sused zháňal nového psa, chcel šteniatko. 
-          Lebo je zlaté a on sa s ním chce pohrať…</p>
-          <a href="article2.html" class="cd"><h3>Čítať ďalej→</h3></a>
-      </div>
-      <div class="blog-col">
-        <h3>DAŇ ZA PSA</h3>
-        <img src="fig/a3.jpg" class="blogpic" alt="article 3">
-        <p>Daň za psa je povinný platiť každý majiteľ psíka. Platenie daní upravuje zákon č. 582/2004 Z. z. o 
-          miestnych daniach a miestnom poplatku za komunálne odpady a drobné stavebné odpady. 
-          Kto je povinný platiť dane? Každý, kto má psíka staršieho ako 6 mesiacom. Výnimku tvoria majitelia alebo držitelia psov 
-          chovaných na vedecké a výskumné účeli, psíky v útulkoch a psík so…</p>
-          <a href="article3.html" class="cd"><h3>Čítať ďalej→</h3></a>
-      </div>
-    </div>
-  </main>
 
-  <div class="bcg">
-  <div class="formular">
-    <h3>Zanechajte nám feedback:</h3>
-
-    <form id="form">
-      <input type="text" placeholder="Zadajte Meno" class="input-text" id="name" required>
-      <input type="email" placeholder="Zadajte E-mail" class="input-text" id="mail" required>
-      <input type="url" placeholder="Zadajte URL obrázku" class="input-text">
-      <textarea rows="5" placeholder="Váš komentár" id="comment" required></textarea>
-      <input type="text" placeholder="Zadajte predmet" list="keywords" class="input-text" id="predmet" required>
-      <datalist id="keywords">
-        <option>psík</option>
-        <option>dogger</option>
-        <option>timko</option>
-        <option>brzda</option>
-      </datalist>
-      <span class="checkbox-title">Máte psíka ?</span>
-      <div class="checkbox">
-        <div class="row">
-        <div class="category">
-          <input type="radio" name="cat" id="ma">
-          <label for="yes">Áno</label>
-          <input type="radio" name="cat" id="nema">
-          <label for="no">Nie</label>
-        </div>
-
-      </div>
-      <div class="category">
-        <input type="checkbox" id="ano" name="yes" required>
-          <label for="yes">Súhlasím so spracovaním mojich osobných údajov</label>
-      </div>
-      </div>
-      <br>
-      <button type="submit" class="button">ODOSLAŤ</button>
-      <button type="reset" class="button">RESETOVAŤ</button>
-    </form>
   
+<main id="router-view">
+</main>
+
+
+
+
+
+
+
+<footer class="footer">
+  <p>&copy; 2017-2021 PHPP Studios, Inc. &middot; <a href="https://imgur.com/a/I66xdmg">neklikat</a> &middot;</p>
+  <div class="ikony">
+    <a href="https://www.facebook.com/erik.eftimov.xd"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/Erik_Eftimov"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/erik_eftimov/"><i class="fa fa-instagram"></i></a>
+    <a href="mailto:erik.eftimov@student.tuke.sk"><i class="fa fa-envelope"></i></a>
   </div>
-  </div>
-
-  <article class="fdb" id="artOpinions">
-    <h2>Váš Feedback:</h2>
-    <div class="opContainer"id="opinionsContainer"></div>
-  </article>
-  </div>
+  <p>Vytvorené s <i class="fa fa-heart-o"></i> pre psíky</p>
+</footer>
 
 
 
-  <footer class="footer">
-    <p>&copy; 2017-2021 PHPP Studios, Inc. &middot; <a href="https://imgur.com/a/I66xdmg">neklikat</a> &middot;</a></p>
-    <div class="ikony">
-      <a href="https://www.facebook.com/erik.eftimov.xd"><i class="fa fa-facebook"></i></a>
-      <a href="https://twitter.com/Erik_Eftimov"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.instagram.com/erik_eftimov/"><i class="fa fa-instagram"></i></a>
-      <a href="mailto:erik.eftimov@student.tuke.sk"><i class="fa fa-envelope"></i></a>
-    </div>
-    <p>Vytvorené s <i class="fa fa-heart-o"></i> pre psíky</p>
-  </footer>
+
 
 <script src="js/scalemenu.js"></script>
-<script type="module" src="js/import.js"></script>
-<script id="mTmplOneOpinion" type="text/template">
-  <section>
-      <h3>{{name}}</h3>
-      <h4>{{about}}</h4>
-      <h5>Vlastní psíka: {{vlastni_psa}}</h5>
-      <h5>Komentár: {{comment}}</h5>
-      <p>{{createdDate}}</p>
-  </section>
+
+<script id="template-welcome" type="text/template">
+    <article>
+      <main class="blog" id="blog">
+        <h1>Naše blogy</h1>
+        <p>Zoznam všetkých naších blogov na jednom mieste!</p>
+    
+        <div class="row">
+          <div class="blog-col">
+            <h3>STRATIL SA MI PES – ČO TERAZ?</h3>
+            <img src="fig/a1.jpg" class="blogpic" alt="article 1">
+            <p>Nech sa akokoľvek snažíme, občas sa niekomu prihodí takáto nepríjemná situácia. Čo teda robiť, 
+              keď sa mi stratí pes? Na to pozrieme v tomto článku. Najskôr si ale povedzme, ako sa preventívne pripraviť na takúto situáciu. 
+              Čo môže pomôcť aby sa k vám psík rýchlo vrátil, ak ho niekto nájde? Čip – v dnešnej dobe je čipovanie povinné, takže by ho mal…</p>
+              <a href="article1.html" class="cd"><h3>Čítať ďalej→</h3></a>
+          </div>
+          <div class="blog-col">
+            <h3>PREČO JE ADOPCIA STARŠIEHO PSÍKA SUPER ?</h3>
+            <img src="fig/a2.jpg" class="blogpic" alt="article 2">
+            <p>Ak nemáte potrebu mať doma čistokrvného psíka a chcete si nejakého zaobstarať, ideálne je pozrieť sa do útulku. Na výber ich budete mať neúrekom. 
+              Od roztomilých šteniatok, ktoré si vás hneď získajú, až po starších psíkov. Dnes sa pozrieme na adopciu staršieho psíka. Keď sused zháňal nového psa, chcel šteniatko. 
+              Lebo je zlaté a on sa s ním chce pohrať…</p>
+              <a href="article2.html" class="cd"><h3>Čítať ďalej→</h3></a>
+          </div>
+          <div class="blog-col">
+            <h3>DAŇ ZA PSA</h3>
+            <img src="fig/a3.jpg" class="blogpic" alt="article 3">
+            <p>Daň za psa je povinný platiť každý majiteľ psíka. Platenie daní upravuje zákon č. 582/2004 Z. z. o 
+              miestnych daniach a miestnom poplatku za komunálne odpady a drobné stavebné odpady. 
+              Kto je povinný platiť dane? Každý, kto má psíka staršieho ako 6 mesiacom. Výnimku tvoria majitelia alebo držitelia psov 
+              chovaných na vedecké a výskumné účeli, psíky v útulkoch a psík so…</p>
+              <a href="article3.html" class="cd"><h3>Čítať ďalej→</h3></a>
+          </div>
+        </div>
+      </main>
+    </article>
 </script>
+
+<script id="template-articles" type="text/template">
+  <section class="fdb2">
+    {{#articles}}
+    <section class="section">
+      <h3>{{title}}</h3>
+      <p>od {{author}}</p>
+    </section>
+    {{/articles}}
+  </section>
+    <div class="ikony-s">
+      {{#prevPage}}
+      <a href="#articles/1/{{pageCount}}"><i class="fas fa-fast-backward"></i></a>
+      <a href="#articles/{{prevPage}}/{{pageCount}}"><i class="fas fa-step-backward"></i></a>
+      {{/prevPage}}
+      {{#nextPage}}
+      <a href="#articles/{{nextPage}}/{{pageCount}}"><i class="fas fa-step-forward"></i></a>
+      <a href="#articles/{{pageCount}}/{{pageCount}}"><i class="fas fa-fast-forward"></i></a>
+      {{/nextPage}}
+    </div>
+  
+  <a class="strn">Strana: {{currPage}} z {{pageCount}}</p>
+</script>
+
+<script id="template-articles-error" type="text/template">
+    <article>
+        <h2>Articles acquisition failed</h2>
+        <p>
+            {{errMessage}}
+        </p>
+    </article>
+</script>
+
+<script id="template-opinions" type="text/template">
+    <article class="fdb"  id="artOpinions">
+        
+        {{#.}}
+        <div class="feedbacksec">
+            <h3>{{name}}</h3>
+            <h4>{{about}}</h4>
+            <h5>Vlastní psíka: {{vlastni_psa}}</h5>
+            <h5>Komentár: {{comment}}</h5>
+            <p>{{createdDate}}</p>
+        </div>
+        {{/.}}
+        {{^.}}
+        <article>
+            <h4>Zatiaľ ste nezanechali žiaden feedback.</h4>
+        </article>
+        {{/.}}
+    </article>
+</script>
+
+<script id="template-addOpinion" type="text/template">
+    <div class="bcg">
+        <div class="formular">
+          <h3>Zanechajte nám feedback:</h3>
+      
+          <form id="form">
+            <input type="text" placeholder="Zadajte Meno" class="input-text" id="name" required>
+            <input type="email" placeholder="Zadajte E-mail" class="input-text" id="mail" required>
+            <input type="url" placeholder="Zadajte URL obrázku" class="input-text">
+            <textarea rows="5" placeholder="Váš komentár" id="comment" required></textarea>
+            <input type="text" placeholder="Zadajte predmet" list="keywords" class="input-text" id="predmet" required>
+            <datalist id="keywords">
+              <option>Feedback</option>
+              <option>Názor</option>
+              <option>timko</option>
+              <option>brzda</option>
+            </datalist>
+            <span class="checkbox-title">Máte psíka ?</span>
+            <div class="checkbox">
+              <div class="row">
+              <div class="category">
+                <input type="radio" name="cat" id="ma">
+                <label for="ma">Áno</label>
+                <input type="radio" name="cat" id="nema">
+                <label for="nema">Nie</label>
+              </div>
+      
+            </div>
+            <div class="category">
+              <input type="checkbox" id="ano" name="yes" required>
+                <label for="ano">Súhlasím so spracovaním mojich osobných údajov</label>
+            </div>
+            </div>
+            <br>
+            <button type="submit" class="button">ODOSLAŤ</button>
+            <button type="reset" class="button">RESETOVAŤ</button>
+          </form>
+        
+        </div>
+        </div>
+</script>
+
+<!--JavaScript code, inserted as a module-->
+<script  type="module" src="js/index.js"></script>
 
 </body>
 </html>
